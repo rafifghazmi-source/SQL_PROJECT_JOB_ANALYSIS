@@ -2,7 +2,7 @@
 # 📊 Data Scientist Job Market Analysis
 
 ## Introduction
-📊 Dive Into the data job market! Focusing on Data Scientist roles, this project exsplores 💲 top-paying jobs, 🔥 in-demand skills, and 📈 where high demand meets high salary in data analytics.
+📊 Dive Into the job market data! Focusing on Data Scientist roles, this project exsplores 💲 top-paying jobs, 🔥 in-demand skills, and 📈 where high demand meets high salary in data analytics.
 
 🔎 SQL queries? Check them out here: [project_sql](/project_sql/).
 
