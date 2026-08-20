@@ -155,7 +155,7 @@ The analysis shows that **Python is the most in-demand skill**, appearing in **2
 | 4 | **AWS** | **697** |
 | 5 | **Tableau** | **634** |
 
->### 4. Skills Based on Salary
+### 4. Skills Based on Salary
 Exploring the average salaries associated with different skills revealed which skills are the highest paying.
 
 ```sql
