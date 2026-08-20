@@ -24,7 +24,7 @@ LIMIT 5;
 
 /*
 Step by step explanation:
-1. SELECT Clause: This part of the query specifies the columns to be retrieved from the database. It includes skills_dim.skills (the name of the skill) and COUNT(skills_job_dim.job_id) (the count of job postings that require that skill).
+1. SELECT Clause: This part of the query specifies the columns to be retrieved from the database. Its includes skills_dim.skills (the name of the skill) and COUNT(skills_job_dim.job_id) (the count of job postings that require that skill).
 2. FROM Clause: This indicates the primary table from which to retrieve the data, which is  job_postings_fact.
 3. INNER JOIN Clause: This combines the job_postings_fact table with the skills_job_dim table based on the job_id, and then combines the result with the skills_dim table based on the skill_id. This allows access to the skill names associated with each job posting.
 4. WHERE Clause: This filters the results to include only those job postings where the job title is 'Data Scientist' and the job is remote (job_work_from_home = 'True').

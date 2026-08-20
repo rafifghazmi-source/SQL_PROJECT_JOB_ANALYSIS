@@ -1,7 +1,7 @@
 /*
 Question: What skills are required for the top-paying Data Scientist jobs?
 - Use the top 10 highest-paying Data Scientist roles that are available remotely to identify the most frequently mentioned skills.
-- Add the specific skills required for these roles
+- Add the specific skills required for these roles.
 - Why? It provides a detailed look at which high-paying jobs demand specific skills,
     helping job seekers understand which skills to develop that align with top salaries.
 */
