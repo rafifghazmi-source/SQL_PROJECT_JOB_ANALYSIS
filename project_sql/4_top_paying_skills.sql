@@ -23,118 +23,14 @@ ORDER BY
 LIMIT 25;
 
 /*
-Top-Paying Skills  Key Insights:
-- High salaries are concentrated in specialized skills. PHP and HTML rank highest at around $183K/year, followed by Crystal (~$183K), Neo4j (~$177K), and 
-    Cassandra (~$174K). This suggests that niche technical expertise can command a premium.
-- Data infrastructure and modern development skills are highly valued. Skills such as Cassandra, Neo4j, MongoDB, Aurora, FastAPI, and 
-    PySpark appear among the top-paying skills, indicating strong compensation potential for expertise in databases, backend systems, and large-scale data processing.
-- The highest-paying skills are not necessarily the most common skills. Skills like Scala, PySpark, JavaScript, and
-    VBA offer high average salaries but may not be as frequently demanded. Therefore, skill frequency and salary potential represent different dimensions when deciding which skills to develop.
-*/
-
-
-/*
-[
-  {
-    "Skill": "php",
-    "Average Salary (Yearly)": "183333"
-  },
-  {
-    "Skill": "html",
-    "Average Salary (Yearly)": "183333"
-  },
-  {
-    "Skill": "crystal",
-    "Average Salary (Yearly)": "183310"
-  },
-  {
-    "Skill": "neo4j",
-    "Average Salary (Yearly)": "177207"
-  },
-  {
-    "Skill": "cassandra",
-    "Average Salary (Yearly)": "173714"
-  },
-  {
-    "Skill": "powerpoint",
-    "Average Salary (Yearly)": "171500"
-  },
-  {
-    "Skill": "sap",
-    "Average Salary (Yearly)": "161780"
-  },
-  {
-    "Skill": "julia",
-    "Average Salary (Yearly)": "157500"
-  },
-  {
-    "Skill": "node.js",
-    "Average Salary (Yearly)": "156107"
-  },
-  {
-    "Skill": "vue",
-    "Average Salary (Yearly)": "156107"
-  },
-  {
-    "Skill": "aurora",
-    "Average Salary (Yearly)": "155000"
-  },
-  {
-    "Skill": "ruby",
-    "Average Salary (Yearly)": "154500"
-  },
-  {
-    "Skill": "mongodb",
-    "Average Salary (Yearly)": "151708"
-  },
-  {
-    "Skill": "jira",
-    "Average Salary (Yearly)": "150324"
-  },
-  {
-    "Skill": "hugging face",
-    "Average Salary (Yearly)": "150000"
-  },
-  {
-    "Skill": "fastapi",
-    "Average Salary (Yearly)": "148000"
-  },
-  {
-    "Skill": "vba",
-    "Average Salary (Yearly)": "146876"
-  },
-  {
-    "Skill": "c",
-    "Average Salary (Yearly)": "146471"
-  },
-  {
-    "Skill": "datarobot",
-    "Average Salary (Yearly)": "145833"
-  },
-  {
-    "Skill": "javascript",
-    "Average Salary (Yearly)": "145417"
-  },
-  {
-    "Skill": "powershell",
-    "Average Salary (Yearly)": "145000"
-  },
-  {
-    "Skill": "visual basic",
-    "Average Salary (Yearly)": "145000"
-  },
-  {
-    "Skill": "scala",
-    "Average Salary (Yearly)": "144576"
-  },
-  {
-    "Skill": "plotly",
-    "Average Salary (Yearly)": "143750"
-  },
-  {
-    "Skill": "pyspark",
-    "Average Salary (Yearly)": "142905"
-  }
-]
-
+Step by step explanation:
+1. SELECT Clause: This specifies the columns to be retrieved. It includes skills_dim.skills (the skill name) and ROUND(AVG(job_postings_fact.salary_year_avg), 0), which calculates the average yearly salary associated with each skill and rounds the result to the nearest whole number.
+2. FROM Clause: This indicates that job_postings_fact is the primary table used for the analysis.
+3. INNER JOIN Clause: The job_postings_fact table is joined with skills_job_dim using job_id, and then skills_job_dim is joined with skills_dim using skill_id. These joins connect each job posting with the skills required for that position.
+4. WHERE Clause: This filters the data to include only Data Scientist positions where the yearly salary is available (salary_year_avg IS NOT NULL) and the position is remote (job_work_from_home = 'True').
+5. GROUP BY Clause: This groups the results by skill name, allowing the AVG() function to calculate the average salary for each individual skill.
+6. ORDER BY Clause: This sorts the results in descending order based on the calculated average yearly salary, placing the highest-paying skills at the top.
+7. LIMIT Clause: This restricts the output to the top 25 skills with the highest average yearly salaries, making it easier to identify the highest-paying skills in the dataset.
+P.s: The query is designed to identify which skills are associated with the highest average salaries among remote Data Scientist positions, providing insights into the potential financial value of different technical skills.
+Tip: Run the query step by step and inspect the results after each clause to better understand how filtering, joining, grouping, and aggregation affect the final output.
 */
