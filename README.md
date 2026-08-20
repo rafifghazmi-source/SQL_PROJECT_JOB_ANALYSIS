@@ -1,5 +1,6 @@
 
 # 📊 Data Scientist Job Market Analysis
+Linkedin: [Rafif Shidqi Ghazmi](https://www.linkedin.com/in/rafif-shidqi-ghazmi-b873822a4/)
 
 ## Introduction
 📊 Dive Into the job market data! Focusing on Data Scientist roles, this project exsplores 💲 top-paying jobs, 🔥 in-demand skills, and 📈 where high demand meets high salary in data analytics.
